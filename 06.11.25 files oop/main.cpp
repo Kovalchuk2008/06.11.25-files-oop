@@ -50,6 +50,7 @@ int main()
 	obj1.Print();
 	obj1.SaveFile("Car.txt");
 
-	obj1.LoadFile("Car.txt");
-	obj1.Print();
+	Car obj2;
+	obj2.Print();
+	obj2.LoadFile("Car.txt");
 }
