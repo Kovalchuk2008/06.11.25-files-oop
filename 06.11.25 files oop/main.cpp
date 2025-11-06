@@ -30,12 +30,11 @@ public:
 	}
 	void LoadFile(string filename)
 	{
-		ifstream read;
-		read.open(filename);
-		while (!read)
+		ifstream read("Car.txt");
+		while (!read.eof())
 		{
-			cout << "Error";
 			string temp;
+			read >> temp;
 			cout << temp << " ";
 		}
 		read.close();
