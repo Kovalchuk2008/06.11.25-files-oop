@@ -30,7 +30,7 @@ public:
 	}
 	void LoadFile(string filename)
 	{
-		ofstream read;
+		ifstream read;
 		read.open(filename);
 		while (!read)
 		{
